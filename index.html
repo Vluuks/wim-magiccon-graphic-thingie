@@ -2,18 +2,32 @@
 
     <head>
         <style>
-            .img-uploaded {
-                width:750px;
-                height:750px;
-                object-fit: cover;
-                object-position: center;
-                padding-left:90px;
-                padding-top:340px;
-                position:absolute;
+            .photoscontainer {
+                width: 50%;
+                height: 50%;
+            }     
+
+            .main {
+                font-family: Georgia, 'Times New Roman', Times, serif;
             }
 
-            .img-graphic {
-                position:absolute;
+            h1 {
+                color: darkslateblue;
+            }
+
+            .img-uploaded {
+                width: 375px;
+                height: 375px;
+                object-fit: cover;
+                object-position: center;
+                padding-left: 45px;
+                padding-top: 170px;
+                position: absolute;
+            }
+
+            #main-graphic {
+                width: 540px;
+                position: absolute;
                 z-index: 1000;
             }
         </style>
@@ -22,7 +36,10 @@
     <body>
         <div class="main">
             <h1>Create your own WIM style "I will be coming to MagicCon" graphic! </h1>
-            <p>A square photo of about 750x750 pixels works best because I was too lazy to code this properly. .png, .jpg and .jpeg accepted.</p>
+            <p>A square photo of at least 500x500 or so works best because I was too lazy to code this properly. .png, .jpg and .jpeg accepted.</p>
+            <p>Firefox: When done, right click and select "make screenshot" and select the graphic area.</p>
+            <p>Other browsers: make as screenshot in some other way... You're on your own hahaha</p>
+            <p><sup>100% organic handmade crappy code</sup></p>
             
             <form class="form">
                 <div class="form-group">
@@ -32,10 +49,9 @@
                 </div>
             </form>
             
-            <div id ="photoscontainer">
-                <div class="img-graphic"><img src="main-graphic.png"></div>
+            <div class="photoscontainer">
+                <div class="img-graphic"><img id="main-graphic" src="main-graphic.png"></div>
                 <div id="userphoto"></div>
-            
             </div>
         </div>
     </body>
